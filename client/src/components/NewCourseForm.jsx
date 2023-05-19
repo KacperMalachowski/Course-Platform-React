@@ -1,10 +1,11 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
-const Login = () => {
+
+const NewCourseForm = () => {
   return (
     <div>
-      Login
+      NewCourseForm
       <Card>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -17,6 +18,11 @@ const Login = () => {
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="Password" />
+            <Form.Label>Repeat password</Form.Label>
+            <Form.Control type="password" placeholder="Repeat password" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
           <Button variant="primary" type="submit">
             Submit
@@ -27,4 +33,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default NewCourseForm;
