@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 const CoursesSection = () => {
   return (
-    <div>
+    <>
       CoursesSection
       <Card>
         <Card.Img variant="top" src="holder.js/100px160" />
@@ -17,7 +17,7 @@ const CoursesSection = () => {
           <Button variant="outline-success">Zapisz się na kurs!</Button>
         </Card.Body>
       </Card>
-    </div>
+    </>
   );
 };
 

@@ -1,35 +1,29 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
-
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 const NewCourseForm = () => {
   return (
-    <div>
+    <>
       NewCourseForm
       <Card>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-            <Form.Label>Repeat password</Form.Label>
-            <Form.Control type="password" placeholder="Repeat password" />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
+        <Form className="mb-3">
+          <FloatingLabel label="Nazwa kursu" className="mb-3">
+            <Form.Control as="textarea" placeholder="Opis kursu" />
+          </FloatingLabel>
+          <FloatingLabel className="mb-3" label="Opis kursu">
+            <Form.Control
+              as="textarea"
+              placeholder="Opis kursu"
+              style={{ height: "100px" }}
+            />
+          </FloatingLabel>
+          <Button className="mb-3" variant="primary" type="submit">
             Submit
           </Button>
         </Form>
       </Card>
-    </div>
+    </>
   );
 };
 

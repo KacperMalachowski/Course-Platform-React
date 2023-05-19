@@ -8,9 +8,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <CoursesSection />
-      <Login />
-      <NewCourseForm />
+      <div>
+        <CoursesSection />
+        <Login />
+        <NewCourseForm />
+      </div>
     </>
   );
 }

@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 const Login = () => {
   return (
-    <div>
+    <>
       Login
       <Card>
         <Form>
@@ -23,7 +23,7 @@ const Login = () => {
           </Button>
         </Form>
       </Card>
-    </div>
+    </>
   );
 };
 
