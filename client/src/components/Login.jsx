@@ -1,25 +1,40 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 const Login = () => {
   return (
     <>
       Login
-      <Card>
+      <Card style={{ padding: "5rem", margin: "5rem" }}>
         <Form>
+          <Form.Label>
+            <h3>Zaloguj się!</h3>
+          </Form.Label>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
+            <FloatingLabel label="Adres email" className="mb-3">
+              <Form.Control
+                maxLength="100"
+                type="email"
+                required
+                placeholder="Adres email"
+              />
+            </FloatingLabel>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <FloatingLabel label="Hasło" className="mb-3">
+              <Form.Control
+                maxLength="100"
+                type="password"
+                placeholder="Hasło"
+              />
+            </FloatingLabel>
+            <Form.Text className="text-muted">
+              Nie udostępnimy Twoich danych bez Twojej zgody.
+            </Form.Text>
           </Form.Group>
           <Button variant="primary" type="submit">
-            Submit
+            Zaloguj się
           </Button>
         </Form>
       </Card>

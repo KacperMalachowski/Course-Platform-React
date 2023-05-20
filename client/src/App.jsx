@@ -30,6 +30,7 @@ const App = () => {
 };
 
 /* TODO 
+-
 - strona logowanie 
 - zgłoszenie nowego szkolenia 
 - baza z info o szkoleniach i userach
