@@ -1,12 +1,11 @@
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 const CoursesSection = () => {
   return (
     <>
       CoursesSection
-      <Card>
+      <Card style={{ padding: "5rem", margin: "5rem" }}>
         <Card.Img variant="top" src="holder.js/100px160" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
