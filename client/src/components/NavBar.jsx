@@ -5,12 +5,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <div>
+    <>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand>Navbar scroll</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -18,8 +18,8 @@ function NavBar() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
+              <Nav.Link href="/">Strona główna</Nav.Link>
+              <Nav.Link href="/login">Zaloguj się</Nav.Link>
               <NavDropdown title="Link" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
@@ -46,8 +46,8 @@ function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </>
   );
-}
+};
 
 export default NavBar;
