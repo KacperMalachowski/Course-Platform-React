@@ -6,10 +6,10 @@ on:
       - main
     paths:
       - server/**
+      - .github/workflows/server-build.yaml
 
 env:
   REGISTRY: ghcr.io
-
   IMAGE_NAME: ${{ github.repository }}/server
 
 jobs:
